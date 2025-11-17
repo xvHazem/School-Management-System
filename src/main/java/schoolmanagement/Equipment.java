@@ -9,24 +9,20 @@ public class Equipment {
         this.cost = cost;
     }
 
-    // يعرض تفاصيل المعدات
     public void equipmentDetails() {
         System.out.printf("Equipment ID: %d, Cost: %.2f%n", equipmentId, cost);
     }
 
-    // شراء المعدات الجديدة وتحديث التفاصيل
     public void purchaseEquipment(int equipmentId, double cost) {
         this.equipmentId = equipmentId;
         this.cost = cost;
         System.out.println("New equipment purchased with ID: " + equipmentId + " and cost: " + cost);
     }
 
-    // إصلاح المعدات
     public void repair() {
         System.out.println("Equipment with ID: " + equipmentId + " has been repaired.");
     }
 
-    // Getters and Setters
     public int getEquipmentId() {
         return equipmentId;
     }

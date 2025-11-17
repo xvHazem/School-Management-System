@@ -8,7 +8,12 @@ public class Student {
     private int busId;
     private double totalFees;
     private double feesPaid;
-
+    
+    private Classroom classroom;
+    private Bus bus;
+    private Playground playground;
+    private NoticeBoard noticeBoard;
+//
     public Student(int studentId, String studentName, int classId, String section, int busId, double totalFees) {
         this.studentId = studentId;
         this.studentName = studentName;

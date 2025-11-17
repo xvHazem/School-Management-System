@@ -1,4 +1,5 @@
 package schoolmanagement;
+import java.util.List;
 
 public class SchoolManagement {
     private String schoolName;
@@ -6,7 +7,11 @@ public class SchoolManagement {
     private String contactNumber;
     private String mediumOfStudy;
     private boolean isOpen;
-
+   
+    private List<Student> students;
+    private List<Bus> buses;
+    private List<Playground> playgrounds;
+//
     public SchoolManagement(String schoolName, String address, String contactNumber, String mediumOfStudy, boolean isOpen) {
         this.schoolName = schoolName;
         this.address = address;

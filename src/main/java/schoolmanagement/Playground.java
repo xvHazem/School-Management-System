@@ -26,8 +26,6 @@ public class Playground {
     }
 
     public boolean isOccupied() {
-        // تحقق من الإشغال حسب المتطلبات
-        // (مثلاً إرجاع true إذا كان classId ليس صفر)
         return classId != 0;
     }
 }

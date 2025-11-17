@@ -1,10 +1,14 @@
 package schoolmanagement;
+import java.util.List;
 
 public class Lab {
     private int labId;
     private int inchargeId;
     private String labName;
-    private boolean occupied;  // حالة الإشغال
+    private boolean occupied; 
+    
+    private List<LabEquipment> equipments;
+
 
     public Lab(int labId, int inchargeId, String labName, boolean occupied) {
         this.labId = labId;
@@ -13,24 +17,19 @@ public class Lab {
         this.occupied = occupied;
     }
 
-    // يعرض تفاصيل المختبر واسم المسؤول
     public void labDetails(String inchargeName) {
         System.out.printf("Lab ID: %d, Lab Name: %s, Incharge ID: %d, Incharge Name: %s%n",
                 labId, labName, inchargeId, inchargeName);
     }
-
-    // يحدد إن كان المختبر مشغول أو لا
+ 
     public boolean isOccupied() {
         return occupied;
     }
 
-    // يعرض تفاصيل الغرامة لطالب معين
     public void payFine(int studentId, double fineAmount) {
         System.out.printf("Student ID %d has a fine of %.2f for lab damages%n", studentId, fineAmount);
     }
-
-    // Getters و Setters
-    
+ 
     public int getLabId() {
         return labId;
     }

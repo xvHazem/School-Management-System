@@ -14,7 +14,7 @@ public class Auditorium {
         this.eventDate = null;
         this.eventTime = null;
     }
-
+//
     public void bookAuditorium(String eventName, String eventDate, String eventTime, int seatsToBook) {
         if (seatsOccupied + seatsToBook <= totalSeats) {
             this.eventName = eventName;

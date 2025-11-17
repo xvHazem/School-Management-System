@@ -26,7 +26,6 @@ public class Bus {
         System.out.println("Bus capacity: " + capacity);
     }
 
-    // Getters and Setters
     public int getBusId() {
         return busId;
     }

@@ -19,8 +19,7 @@ public class Classroom {
         System.out.printf("Classroom ID: %d, Name: %s, Teacher ID: %d, Student Count: %d, Equipment ID: %d%n",
             classId, className, teacherId, studentCount, equipmentId);
     }
-    
-    // Getters and Setters
+   
     public int getClassId() {
         return classId;
     }

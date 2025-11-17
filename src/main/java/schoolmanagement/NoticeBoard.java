@@ -1,19 +1,35 @@
 package schoolmanagement;
 
-import java.util.Date;
+import java.util.List;
 
 public class NoticeBoard {
-    private String noticeId;
-    private String message;
-    private Date date;
+    private List<String> newsList;  // قائمة الأخبار أو المعلومات
+    private String inchargeName;   // اسم المسؤول عن لوحة الإعلانات
 
-    public NoticeBoard(String noticeId, String message, Date date) {
-        this.noticeId = noticeId;
-        this.message = message;
-        this.date = date;
+    public NoticeBoard(List<String> newsList, String inchargeName) {
+        this.newsList = newsList;
+        this.inchargeName = inchargeName;
     }
 
-    public void displayNotice() {
-        System.out.println("Notice (" + date + "): " + message);
+    public void display() {
+    System.out.println("NoticeBoard (" + inchargeName + "): " + String.join(", ", newsList));
+}
+
+
+    // getters and setters
+    public List<String> getNewsList() {
+        return newsList;
+    }
+
+    public void setNewsList(List<String> newsList) {
+        this.newsList = newsList;
+    }
+
+    public String getInchargeName() {
+        return inchargeName;
+    }
+
+    public void setInchargeName(String inchargeName) {
+        this.inchargeName = inchargeName;
     }
 }

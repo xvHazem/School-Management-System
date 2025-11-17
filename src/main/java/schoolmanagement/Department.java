@@ -6,7 +6,7 @@ public class Department {
     private int departmentId;
     private String departmentName;
     private String inchargeName;
-    private List<Integer> memberList; // قائمة معرفات أعضاء القسم
+    private List<Integer> memberList; 
 
     public Department(int departmentId, String departmentName, String inchargeName, List<Integer> memberList) {
         this.departmentId = departmentId;
@@ -19,8 +19,6 @@ public class Department {
         System.out.printf("Department ID: %d, Name: %s, Incharge: %s, Members: %s%n",
                           departmentId, departmentName, inchargeName, memberList.toString());
     }
-
-    // Getters and Setters
 
     public int getDepartmentId() {
         return departmentId;
